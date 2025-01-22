@@ -1,15 +1,28 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --border-color: #ccc;
+    --background-light: #f9f9f9;
+    --text-color-dark: #333;
+    --shadow-color: gray;
+    --padding-small: 10px;
+    --padding-large: 20px;
+    --image-width: 150px;
+    --aside-width: 300px;
+    --aside-img-width:200px;
+}
 nav {
-    background-color :darkblue;
-    padding: 10px;
+    background-color : var(--primary-color);
+    padding: var(--padding-small);
 }
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
-    padding: 20px;
+    padding: var(--padding-large);
 }
 
 h1{
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 main{
@@ -18,11 +31,11 @@ main{
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px  var(--shadow-color);
 }
 
 p{
@@ -30,26 +43,26 @@ p{
 }
 
 aside{
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--padding-large);
+    border: 1px solid  var(--border-color);
+    padding: var(--padding-small);
+    background-color: var(--background-light);
+    color: var(--text-color-dark);
 }
 
 aside img{
-    width: 200px;
+    width: var(--aside-img-width);
     height: auto;
 }
 
 
 aside p{
-    padding: 10px;
+    padding: var(--padding-small);
 }
 
 footer{
-    margin-top: 20px;
-    border-top: 2px solid #ccc;
+    margin-top: var(--padding-large);
+    border-top: 2px solid var(--border-color);
     text-align: center;
 }
