@@ -214,5 +214,245 @@ footer p {
 }
 h2 {
     text-align: center;
-    font-size: 2em; /* Tamanho da fonte maior para destacar o título */
+    font-size: 2em; 
+}
+
+.btn{
+    background-color: var(--dark-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--background-color) 0.3s  ;
+}
+.btn:hover{
+    background-color: var(--highlight-color);
+}
+.submit-btn{
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.submit-btn:hover{
+    background-color: var(--highlight-color);
+}
+.team-profiles{
+    margin: 2rem 0;
+}
+.profile-gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.profile-gallery figure{
+    text-align: center;
+}
+.profile-gallery img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-gallery figcaption{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.contact-form{
+    max-width: 1000px; /* Largura máxima maior para acomodar o layout */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.company-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.company-info h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+.form-container {
+    display: flex;
+    gap: 40px; /* Espaço entre as colunas */
+}
+.contact-form label{
+    display: block;
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+.contact-form fieldset{
+    border: none;
+    margin: 1rem 0;
+}
+.contact-form fieldset legend{
+    font-weight: bold;
+    color: var(--text-color);
+}
+.contact-form textarea{
+    resize: vertical;
+}
+footer a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--highlight-color);
+}
+.company-info p {
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.company-info strong {
+    color: var(--dark-color);
+}
+
+/* Right Side (Form) */
+.form-fields {
+    flex: 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+fieldset.form-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset.form-group legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.radio-group {
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--highlight-color);
+}
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    
+}
+/* Ajustes para os botões de rádio */
+.form-group fieldset {
+    border: none; /* Remove a borda padrão do fieldset */
+    padding: 0;
+    margin: 0;
+}
+
+.form-group fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.form-group fieldset div {
+    display: grid; /* Alinha o botão e o texto horizontalmente */
+    align-items: normal; /* Centraliza verticalmente */
+    margin-bottom: 5px; /* Espaço entre os botões de rádio */
+    justify-content: start; /* Alinha no canto esquerdo */
+    grid-template-columns: 0fr 0fr 0fr;
+	
+}
+
+.form-group fieldset input[type="radio"] {
+    margin-right: 0px; /* Espaço entre o botão e o texto */
+    margin-left: 0; /* Garante que o botão fique no início da margem */
+}
+
+.form-group fieldset label {
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+/* Ajustes para o checkbox */
+.form-group input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o checkbox e o texto */
+    margin-left: 0; 
+    margin-bottom: auto;
+}
+
+.form-group input[type="checkbox"] + label {
+    display: flex; /* Alinha o checkbox e o texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    justify-content: flex-start; /* Alinha no canto esquerdo */
+}
+
+/* Ajustes para o texto "Preenche este campo" */
+.form-group fieldset legend::after {
+    content: ""; /* Remove o texto "Preenche este campo" */
+    display: none;
 }
