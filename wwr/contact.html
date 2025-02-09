@@ -22,15 +22,51 @@
     </header>
     <main class="container">
         <h1>Contact Us</h1>
-        
-        <section class="company-info">
-            <h2>Company Information</h2>
-            <p>Address: 123 River Road, Adventure City, AC 98765</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: contact@whiterafting.com</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1068.924254717415!2d-54.43791304602001!3d-25.690571019428518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m1!3e6!5e0!3m2!1spt-BR!2sbr!4v1738946845973!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+        <section class="contact-container">
+            <div class="company-info">
+                <h2>Company Information</h2>
+                <p>Address: 123 River Road, Adventure City, AC 98765</p>
+                <p>Email: contact@whiterafting.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1068.924254717415!2d-54.43791304602001!3d-25.690571019428518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m1!3e6!5e0!3m2!1spt-BR!2sbr!4v1738946845973!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>The purpose of the message:</legend>
+                            <div>
+                                <input type="radio" id="general" name="purpose" value="general" required>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="observation" name="purpose" value="observation">
+                                <label for="observation">Observation Question</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                    
+                    <button type="submit" class="btn">Submit Message</button>
+                </form>
+            </div>
         </section>
-        
+
         <section class="team-profiles">
             <h2>Meet Our Team</h2>
             <div class="profile-gallery">
@@ -48,44 +84,7 @@
                 </figure>
             </div>
         </section>
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <div class="form-group">
-                    <fieldset>
-                        <legend>The purpose of the message:</legend>
-                        <div>
-                            <input type="radio" id="general" name="purpose" value="general" required>
-                            <label for="general">General Inquiry</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="reservation" name="purpose" value="reservation">
-                            <label for="reservation">Reservation Question</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                            <label for="suggestion">Website Suggestion</label>
-                        </div>
-                    </fieldset>
-                </div>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
-                
-                <button type="submit" class="btn">Submit Message</button>
-            </form>
-        </section>
+
     </main>
     <footer>
         <p>&copy; 2025 White Water Rafting | Designed by Patricia Barros</p>
@@ -100,7 +99,7 @@
                 <img src="images/instagram.png" alt="Instagram">
             </a>
         </nav>
-        <p><a href="images/contact-wireframe.png">View Contact Us Wireframe</a></p>
+        <p><a href="https://app.moqups.com/X8ljqvJvabHRiRjcrZobLzZivT9G9Wby/view/page/aa33141ef">View Contact Us Wireframe</a></p>
     </footer>
      
 </body>
