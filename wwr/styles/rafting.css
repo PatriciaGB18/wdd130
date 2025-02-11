@@ -104,7 +104,6 @@ header img {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 .main-menu .btn:hover {
@@ -390,7 +389,6 @@ fieldset.form-group legend {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
