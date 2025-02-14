@@ -194,12 +194,16 @@ footer {
     position: relative;
 }
 
-footer p {
+footer p,a {
     text-align: center;
     width: 100%;
     color: var(--text-color);
 }
 
+
+footer a:hover{
+    color: var(--highlight-color);
+}
 .sociallinks {
     display: flex;
     gap: 15px;
@@ -312,13 +316,7 @@ h2 {
 .contact-form textarea{
     resize: vertical;
 }
-footer a{
-    color: var(--dark-color);
-    text-decoration: none;
-}
-footer a:hover{
-    color: var(--highlight-color);
-}
+
 .company-info p {
     margin: 10px 0;
     color: var(--text-color);
@@ -392,16 +390,6 @@ fieldset.form-group legend {
 
 .submit-btn:hover {
     background-color: var(--highlight-color);
-}
-form{
-    width: 650px;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    border-radius: 0.5rem;
-    background-color: #eee;
-    display: grid;
-    
 }
 
 .form-group fieldset {
@@ -479,7 +467,13 @@ form{
 }
 
 .contact-form {
-    max-width: 50%;
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
 }
 
 .company-info iframe {
@@ -525,4 +519,176 @@ form{
 
 .contact-form button:hover {
     background-color: #0056b3;
+}
+
+/* homepage.css */
+.homepage-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.homepage-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.homepage-company {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-form {
+    flex: 1;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.homepage-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.homepage-form label {
+    margin-top:  10px;
+    text-align: left;
+    font-size: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.homepage-form input {
+
+    width: 60%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.homepage-submit-btn {
+    background-color: #219ebc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+    align-items: center;
+}
+
+.homepage-submit-btn:hover {
+    background-color: #023047;
+}
+.home-cta {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;       
+    font-size: 2rem;         
+    font-weight: bold;        
+    padding: 20px;           
+}
+
+.home-cta a {
+    text-decoration: none;    
+}
+
+
+/* trips.css */
+/* trips.css */
+.trips-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trips-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip {
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.trip.reverse {
+    flex-direction: row-reverse;
+}
+
+.trip-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.trip-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.trip h3 {
+    margin-bottom: 10px;
+}
+
+.trip p {
+    margin-top: 0;
+}
+
+.trip-table {
+    margin-top: 20px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: #219ebc;
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-table tr:hover {
+    background-color: #ddd;
 }
