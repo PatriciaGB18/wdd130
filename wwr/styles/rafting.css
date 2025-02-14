@@ -226,7 +226,7 @@ h2 {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: var(--background-color) 0.3s  ;
+    transition: var(--background-color) 0.3s ;
 }
 .btn:hover{
     background-color: var(--highlight-color);
@@ -611,6 +611,13 @@ fieldset.form-group legend {
 .home-cta a {
     text-decoration: none;    
 }
+.home-cta h2 {
+    font-size: 30px; /* Ajuste o tamanho conforme preferir */
+    margin-bottom: 1%;
+    margin-right: 1%;
+    color: var(--highlight-color);
+}
+
 
 
 /* trips.css */
